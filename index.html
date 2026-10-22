@@ -7,19 +7,19 @@
         var now = new Date();
         var hours = now.getHours();
         var minutes = now.getMinutes();
-        var secondd = now.getSeconds();
+        var seconds = now.getSeconds();
 
         if (hours < 10) hours = '0' + hours;
         if (minutes < 10) minutes = '0' + minutes;
         if (seconds < 10) seconds = '0' + seconds;
 
-        vat timeString = hours + ':' + minutes + ':' + seconds;
-        document.getElementById('Clock').innerHTML = timeString;
+        var timeString = hours + ':' + minutes + ':' + seconds;
+        document.getElementById('clock').innerHTML = timeString;
       }
 
       setInterval(updateClock, 1000);
 
-      window.onload = updateClock；
+      window.onload = updateClock;
     </script>
   </head>
   <body>
