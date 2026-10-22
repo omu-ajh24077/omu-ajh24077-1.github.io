@@ -9,7 +9,13 @@
       <p>村上宝汰(AJH24077)</p>
     </header>
     <main>
-      
+      <h2>BMI指標計算</h2>
+      <form oninput = "bmi.value = Math.round(Math.Pow(Number(weight.value), 2) / Math.Pow(Number(height.value), 2) * 10) / 10">
+        <p><label>体重(kg):<input name = "weight" type = "number" step = "any"></label></p>
+        <p><label>(cm):<input name = "height" type = "number" step = "any"></label></p>
+        <p><label>BMI:<output name = "bmi></output></label></p>
+      </form>
+                        
       <h2>お薦めな旅行先：京都</h2>
       <p>私のお薦めの旅行先は京都です。歴史的な寺社仏閣が多く、四季折々の美しい景色や美味しい和食を楽しむことができます。</p>
       <a href="index.html">1ページ目へ</a>
